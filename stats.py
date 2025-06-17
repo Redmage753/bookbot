@@ -19,9 +19,14 @@ def char_counter(text):
             char_list[letter]=1
     return char_list
 
-def sort_num(dict):
-    sorted_dict={}
-    for i in 
-    return sorted_dict
+def sort_on(dict):
+    return dict["num"]
+
+def better_dict(d):
+    new_list=[]
+    for char,num in d.items():
+        new_list.append({"char": char, "num": num})
+    new_list.sort(reverse=True, key=sort_on)
+    return new_list 
 
 
